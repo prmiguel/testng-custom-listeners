@@ -11,8 +11,17 @@
             <class name="com.example.tests.DataProviderTest"/>
         </classes>
     </test>
+    <test name="Skipped Tests">
+        <classes>
+            <class name="com.example.tests.SkippedTest"/>
+        </classes>
+    </test>
     <listeners>
         <listener class-name="org.testng.listeners.BaseTestListener"></listener>
         <listener class-name="org.testng.listeners.SimpleMarkdownReporterListener"></listener>
+        <listener class-name="org.testng.listeners.HtmlTestReporterListener"></listener>
+        <listener class-name="org.testng.listeners.MarkdownListener"></listener>
+        <listener class-name="org.testng.listeners.ExecutionSummaryMarkdownListener"></listener>
+        <listener class-name="org.testng.listeners.MarkdownListenerWithChart"></listener>
     </listeners>
 </suite>

@@ -14,7 +14,7 @@ public class DataProviderTest {
         };
     }
 
-    @Test(dataProvider = "stringData")
+    @Test(dataProvider = "stringData", groups = {"dataProvider", "basic"})
     public void testWithStringData(String fruit, Integer count) {
         System.out.println("DataProviderTest: Testing " + fruit + " with count " + count);
         assert fruit != null;
@@ -30,7 +30,7 @@ public class DataProviderTest {
         };
     }
 
-    @Test(dataProvider = "numberData")
+    @Test(dataProvider = "numberData", groups = {"dataProvider", "basic"})
     public void testWithNumberData(int a, int b, int expectedSum) {
         System.out.println("DataProviderTest: Testing " + a + " + " + b + " = " + expectedSum);
         int actualSum = a + b;
@@ -47,7 +47,7 @@ public class DataProviderTest {
         };
     }
 
-    @Test(dataProvider = "booleanData")
+    @Test(dataProvider = "booleanData", groups = {"dataProvider", "basic"})
     public void testWithBooleanData(boolean a, boolean b) {
         System.out.println("DataProviderTest: Testing booleans " + a + " and " + b);
     }
