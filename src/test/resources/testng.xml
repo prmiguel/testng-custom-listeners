@@ -23,5 +23,6 @@
         <listener class-name="org.testng.listeners.MarkdownListener"></listener>
         <listener class-name="org.testng.listeners.ExecutionSummaryMarkdownListener"></listener>
         <listener class-name="org.testng.listeners.MarkdownListenerWithChart"></listener>
+        <listener class-name="org.testng.listeners.TestMarkdownReporterListener"></listener>
     </listeners>
 </suite>
